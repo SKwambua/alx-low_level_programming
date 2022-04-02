@@ -41,9 +41,12 @@ int main(int argc, char *argv[])
 	if (amount > 5 && amount < 10)
 	{
 		while (amount >= 5)
-		{
 			amount -= 5, coins++;
-		}
+	}
+	if (amount > 2 && amount < 5)
+	{
+		while (amount >= 2)
+			amount -= 2, coins++;
 	}
 	if (amount == 1 || amount == 2 || amount == 5 || amount == 10 || amount == 25)
 	{
