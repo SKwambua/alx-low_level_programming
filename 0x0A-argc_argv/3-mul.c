@@ -11,20 +11,18 @@
  */
 int main(int argc, char *argv[])
 {
+	int i, j, result;
+
 	if (argc <= 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-/* atoi convert a string to an int */
-	int i, j, mul;
+/* atoi converts a string to an int */
 
 	i = atoi(argv[1]);
 	j = atoi(argv[2]);
-
-	mul = i * j;
-	{
-		printf("%d\n", mul);
-	}
+	result = i * j;
+	printf("%d\n", result);
 	return (0);
 }
