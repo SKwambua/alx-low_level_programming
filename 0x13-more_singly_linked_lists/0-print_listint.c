@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "lists.h"
 
 /**
  * print_listint - prints all elements of of alink list
@@ -12,7 +13,7 @@ size_t print_listint(const listint_t *h)
 	while (h)
 	{
 		printf("%d\n", h->n);
-		num++;
+		len++;
 		h = h->next;
 	}
 	return (len);
